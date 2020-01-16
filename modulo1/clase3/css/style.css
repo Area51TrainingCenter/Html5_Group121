@@ -1,0 +1,107 @@
+/*header img
+{
+	width: 100px;
+}
+
+#con-logo
+{
+	display: inline-block;
+}*/
+
+*{
+	box-sizing: border-box;
+}
+
+
+body
+{
+	color: black;
+	font-size: 14px;
+	font-family: Muli;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+header{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+header a
+{
+	color: black;
+}
+
+header nav
+{
+	margin-top: 15px;
+}
+
+header nav a
+{
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+}
+
+footer
+{
+	padding: 15px;
+	text-align: center;
+	color: white;
+	background-color: red;
+}
+
+/*footer span
+{
+	padding: 15px;
+	background-color: red;
+}*/
+
+.secciones
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+.container
+{
+	width: 1170px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.container-fluid
+{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+#logo
+{
+	width: 100px;
+}
+
+#inicio img
+{
+	width: 100%;
+	display: block;
+}
+
+#locales
+{
+	background-color: #eb0028;
+	color: white;
+}
+
+#lacarta
+{
+	background-color: #ffb718;
+}

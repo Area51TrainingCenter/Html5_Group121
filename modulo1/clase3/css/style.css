@@ -83,6 +83,14 @@ footer
 	padding-left: 15px;
 }
 
+.input-form
+{
+	padding: 10px;
+	height: 40px;
+	display: block;
+	width:  100%;
+}
+
 
 #logo
 {
@@ -104,4 +112,10 @@ footer
 #lacarta
 {
 	background-color: #ffb718;
+}
+
+#mundo
+{
+	color: white;
+	background-color: #b41782;
 }

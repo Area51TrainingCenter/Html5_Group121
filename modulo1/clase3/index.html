@@ -75,32 +75,63 @@
 					<li>verduras</li>
 					<li>pan</li>
 				</ol>
-				<table width="100%" border="1" cellpadding="10px" cellspacing="10px">
+				<table width="100%" border="1" bgcolor="black" cellpadding="10px" cellspacing="10px">
 					<tr>
-						<th>DNI</th>
-						<th>Nombre</th>
-						<th>Email</th>
-						<th>Fec. NAc.</th>
+						<th colspan="2"  width="50%"  align="right" valign="bottom">DNI y NOmbre</th>
+						<th   width="30%" align="center" valign="middle">Email</th>
+						<th  width="10%">Fec. NAc.</th>
 					</tr>
 					<tr>
-						<td>12345678</td>
+						<td bgcolor="green" rowspan="3">12345678</td>
 						<td>Alonso Perez</td>
 						<td>nuevocorreo17@gmail.com</td>
 						<td>27/03/1985</td>
 					</tr>
 					<tr>
-						<td>87654321</td>
 						<td>Kristina</td>
 						<td>nuevocorreo17@gmail.com</td>
 						<td>27/03/1985</td>
 					</tr>
 					<tr>
-						<td>12345678</td>
+						
 						<td>Alonso Perez</td>
 						<td>nuevocorreo17@gmail.com</td>
 						<td>27/03/1985</td>
 					</tr>
 				</table>
+				<br>
+				<table width="100%" border="1" bgcolor="black" cellpadding="10px" cellspacing="10px">
+					<tr>
+						<td bgcolor="orange" width="25%" height="50"></td>
+						<td bgcolor="#ff0000" colspan="2" width="25%" height="50"></td>
+						<td bgcolor="#0000ff" width="25%" height="50" rowspan="3"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#00ff00" rowspan="2" width="25%" height="50"></td>
+						<td  bgcolor="green"  width="25%" height="50"></td>
+						<td bgcolor="yellow" width="25%" height="50" rowspan="2"></td>
+					</tr>
+					<tr>
+						<td bgcolor="pink" width="25%" height="50"></td>
+					</tr>
+					<tr>
+						<td colspan="3" bgcolor="#bbb" width="25%" height="50"></td>
+						<td bgcolor="green" width="25%" height="50"></td>
+					</tr>
+					<tr>
+						<td bgcolor="purple" width="25%" colspan="2" height="50"></td>
+						<td  bgcolor="cyan" width="25%" colspan="2" height="50"></td>
+					</tr>	
+				</table>
+			</div>
+		</section>
+		<section id="mundo" class="secciones">
+			<div class="container">
+				<form action="registro.php" idsize="8"="frmcontactos" method="" enctype="multipart/form-data">
+					
+					<input type="text" name="nombre" class="input-form" placeholder="Nombre" required  value="" minlength="1" maxlength="8" size="8" >
+
+				</form>
 			</div>
 		</section>
 	</main>

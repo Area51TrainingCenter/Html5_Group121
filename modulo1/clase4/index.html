@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Alonso Perez">
+	<title>Mi primera web</title>
+	<link rel="icon shorticon"  href="img/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+	<!--	<a href="#"><img id="logo" src="img/logo.svg"></a> -->
+		<a href="#" id="con-logo"><img id="logo" src="img/logo.svg"></a>
+		<nav class="secciones">
+			<a href="#inicio">Inicio</a>
+			<a href="#lacarta">La carta</a>
+			<a href="#locales">Locales</a>
+			<a href="#mundo">Tanta en el mundo</a>
+			<a href="#trabaja">Trabaja con nosotros</a>
+		</nav>
+		<!--<a href="#"><i class="fas fa-bars"></i></a>-->
+	</header>
+	<main>
+		<section id="inicio">
+			<img src="img/imagen1.jpg">
+		</section>
+		<section id="lacarta" class="secciones">
+			<div class="container">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<blockquote>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+				</blockquote>
+				<p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			</div>
+		</section>
+		<section  id="locales"  class="secciones">
+			<div class="container">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				<ul>
+					<li>carne</li>
+					<li>pollo</li>
+					<li>verduras</li>
+					<li>Pan
+						<ul>
+							<li>carne</li>
+							<li>pollo</li>
+							<li>verduras</li>
+							<li>pan</li>
+						</ul>
+					</li>
+				</ul>
+				<ol type="1" start="4" reversed>
+					<li>carne</li>
+					<li>pollo</li>
+					<li>verduras</li>
+					<li>pan</li>
+				</ol>
+				<table width="100%" border="1" bgcolor="black" cellpadding="10px" cellspacing="10px">
+					<tr>
+						<th colspan="2"  width="50%"  align="right" valign="bottom">DNI y NOmbre</th>
+						<th   width="30%" align="center" valign="middle">Email</th>
+						<th  width="10%">Fec. NAc.</th>
+					</tr>
+					<tr>
+						<td bgcolor="green" rowspan="3">12345678</td>
+						<td>Alonso Perez</td>
+						<td>nuevocorreo17@gmail.com</td>
+						<td>27/03/1985</td>
+					</tr>
+					<tr>
+						<td>Kristina</td>
+						<td>nuevocorreo17@gmail.com</td>
+						<td>27/03/1985</td>
+					</tr>
+					<tr>
+						
+						<td>Alonso Perez</td>
+						<td>nuevocorreo17@gmail.com</td>
+						<td>27/03/1985</td>
+					</tr>
+				</table>
+				<br>
+				<table width="100%" border="1" bgcolor="black" cellpadding="10px" cellspacing="10px">
+					<tr>
+						<td bgcolor="orange" width="25%" height="50"></td>
+						<td bgcolor="#ff0000" colspan="2" width="25%" height="50"></td>
+						<td bgcolor="#0000ff" width="25%" height="50" rowspan="3"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#00ff00" rowspan="2" width="25%" height="50"></td>
+						<td  bgcolor="green"  width="25%" height="50"></td>
+						<td bgcolor="yellow" width="25%" height="50" rowspan="2"></td>
+					</tr>
+					<tr>
+						<td bgcolor="pink" width="25%" height="50"></td>
+					</tr>
+					<tr>
+						<td colspan="3" bgcolor="#bbb" width="25%" height="50"></td>
+						<td bgcolor="green" width="25%" height="50"></td>
+					</tr>
+					<tr>
+						<td bgcolor="purple" width="25%" colspan="2" height="50"></td>
+						<td  bgcolor="cyan" width="25%" colspan="2" height="50"></td>
+					</tr>	
+				</table>
+			</div>
+		</section>
+		<section id="mundo" class="secciones">
+			<div class="container">
+				<form action="registro.php" id="frmcontactos" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="id" value="123456">
+					<input type="text" name="nombre" class="input-form" placeholder="Nombre" required  value="" minlength="2" maxlength="8"  >
+					<input placeholder="Password" type="password" name="password" class="input-form">
+					<input placeholder="Email" type="email" name="email" class="input-form">
+					<input  type="number" name="numero" class="input-form">
+					<input  type="color" name="color" class="input-form">
+					<input  type="date" name="fecha" class="input-form" max="2020-01-21" value="2020-01-20">
+					<input  type="time" name="hora" step="2" class="input-form" >	
+					<input  type="datetime-local" step="1" name="fechahora"  class="input-form" >
+					<input  type="week" name="semana" class="input-form">	
+					<input  type="month" name="mes" class="input-form">	
+
+					<input  type="range" name="rango" min="0" max="10" step="2" class="input-form">	
+					 <input placeholder="000-00-000" type="tel" name="phone" class="input-form" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+					  <input type="url" name="url" class="input-form">
+					 <input type="file" name="archivo" multiple accept=".jpg,.png" class="input-form">
+					 <div class="input-form">
+						 <input type="radio" name="genero" checked value="masculino">Masculino
+						 <input type="radio" name="genero" value="femenino">Femenino
+						 <input type="radio" name="genero" value="otros">Otros
+					 </div>
+					 <div class="input-form">
+						 <input type="checkbox" checked name="toyota" value="toyota">Toyota
+						 <input type="checkbox" name="marca[]" value="mazda">
+						 Mazda
+						 <input type="checkbox" name="marca[]" value="honda">
+						 Honda
+						 <input type="checkbox" name="marca[]" value="hyundai">Hyundai
+						 <input type="checkbox" name="marca[]" value="nissan">
+						 Nissan
+						  <input type="checkbox" name="marca[]" value="audi">
+						 Audi
+						 <input type="checkbox" name="marca[]" value="chevrolet">
+						 Chevrolet
+						 <input type="checkbox" name="marca[]" value="kia">
+						 Kia
+						 <input type="checkbox" name="marca[]" value="peugeot">
+						 Peugeot
+					</div>
+					<textarea name="mensaje" placeholder="Mensaje" rows="10" cols="100" class="input-form"></textarea>
+					<select required name="distritos" class="input-form">
+						<option value="">-- Seleccione su distrito --</option>
+						<option value="pueblo libre"> Pueblo Libre  </option>
+						<option value="surco"> Surco </option>
+						<option value="miraflores"> Miraflores </option>
+						<option value="los olivos"> Los Olivos </option>
+						<option value="san juan de miraflores"> San Juan de Miraflores </option> 
+						<option value="chorrillos">Chorrillos</option>
+						<option value="ate vitarte">Ate Vitarte</option>
+						<option value="san martin de porres">San MArtin de Porres</option>
+					</select>
+					<select required name="distritos"  multiple>
+						<option value="">-- Seleccione su distrito --</option>
+						<option value="pueblo libre"> Pueblo Libre  </option>
+						<option value="surco"> Surco </option>
+						<option value="miraflores"> Miraflores </option>
+						<option value="los olivos"> Los Olivos </option>
+						<option value="san juan de miraflores"> San Juan de Miraflores </option> 
+						<option value="chorrillos">Chorrillos</option>
+						<option value="ate vitarte">Ate Vitarte</option>
+						<option value="san martin de porres">San MArtin de Porres</option>
+					</select>
+
+					<select required name="distritos" class="input-form">
+						<option value="">-- Seleccione su distrito --</option>
+						<optgroup label="Cono Oeste">
+							<option value="pueblo libre"> Pueblo Libre  </option>
+							<option value="surco"> Surco </option>
+							<option value="miraflores"> Miraflores </option>
+						</optgroup>
+						<optgroup label="Cono Norte">
+							<option value="los olivos"> Los Olivos </option>
+							<option value="san martin de porres">San MArtin de Porres</option>
+						</optgroup>
+						<optgroup label="Cono Este">
+							<option value="ate vitarte">Ate Vitarte</option>
+						</optgroup>
+						<optgroup label="Cono Sur">
+							<option value="chorrillos">Chorrillos</option>
+							<option value="san juan de miraflores"> San Juan de Miraflores </option> 
+						</optgroup>
+					</select>
+
+					<select required name="distritos" multiple>
+						<option value="">-- Seleccione su distrito --</option>
+						<optgroup label="Cono Oeste">
+							<option value="pueblo libre"> Pueblo Libre  </option>
+							<option value="surco"> Surco </option>
+							<option value="miraflores"> Miraflores </option>
+						</optgroup>
+						<optgroup label="Cono Norte">
+							<option value="los olivos"> Los Olivos </option>
+							<option value="san martin de porres">San MArtin de Porres</option>
+						</optgroup>
+						<optgroup label="Cono Este">
+							<option value="ate vitarte">Ate Vitarte</option>
+						</optgroup>
+						<optgroup label="Cono Sur">
+							<option value="chorrillos">Chorrillos</option>
+							<option value="san juan de miraflores"> San Juan de Miraflores </option> 
+						</optgroup>
+					</select>
+					<input type="reset" value="Limpiar">
+					<input type="submit"  value="Enviar">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>Derechos Reservados 2020</span>
+	</footer>
+</body>
+</html>

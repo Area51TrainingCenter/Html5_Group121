@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Alonso Perez">
+	<title>Mi primera web</title>
+	<link rel="icon shorticon"  href="img/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+	<!--	<a href="#"><img id="logo" src="img/logo.svg"></a> -->
+		<a href="#" id="con-logo"><img id="logo" src="img/logo.svg"></a>
+		<nav class="secciones">
+			<a href="#inicio">Inicio</a>
+			<a href="#lacarta">La carta</a>
+			<a href="#locales">Locales</a>
+			<a href="#mundo">Tanta en el mundo</a>
+			<a href="#trabaja">Trabaja con nosotros</a>
+		</nav>
+		<!--<a href="#"><i class="fas fa-bars"></i></a>-->
+	</header>
+	<main>
+		<section id="inicio">
+			<img src="img/imagen1.jpg">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-50">
+						<h1>El mejor restaurante del Perù y el mundo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<a href="#lacarta" class="boton boton-naranja">Ver la carta</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="lacarta" class="secciones">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-66">
+						<div class="contenedor-img rect">
+							<img src="img/plato1.jpg" class="img-full">
+							<h2>Almuerzo</h2>
+						</div>
+					</div>
+					<div class="columna columna-33">
+						<div class="contenedor-img">
+							<img src="img/plato2.jpg" class="img-full">
+							<h2>Desayuno</h2>
+						</div>
+					</div>
+					<div class="columna columna-33">
+						<div class="contenedor-img">
+							<img src="img/plato3.jpg" class="img-full">
+							<h2>Pisco</h2>
+						</div>
+					</div>
+					<div class="columna columna-33">
+						<div class="contenedor-img">
+							<img src="img/plato4.jpg" class="img-full">
+							<h2>Tragos</h2>
+						</div>
+					</div>
+					<div class="columna columna-33">
+						<div class="contenedor-img">
+							<img src="img/plato5.jpg" class="img-full">
+							<h2>Mariscos</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section  id="locales"  class="secciones">
+			<!--<video width="800" height="600" poster="img/imagen1.jpg" src="video/video.mp4" control  autoplay muted loop >
+			</video>-->
+			<video width="800" height="600" autoplay    muted loop >
+				<source src="video/video.mp4" type="video/mp4">
+				<source src="video/video.ogv" type="video/ogg">
+				<source src="video/video.webm" type="video/webm">
+			</video>
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</h2>
+		</section>
+		<section id="mundo" class="secciones">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-50">
+						<div class="contenedor-marco">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/fAgvmh1jaCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="columna columna-50">
+						<embed width="100%" height="300" src="pdf/pdf.pdf"></embed>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>Derechos Reservados 2020</span>
+	</footer>
+</body>
+</html>

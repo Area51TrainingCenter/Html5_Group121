@@ -1,0 +1,432 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-size: 14px;
+	color: black;
+	font-family: "Barlow";
+}
+
+footer
+{
+	background-color: #eb0028;
+	color: #ffff;
+}
+
+.container{
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.container-fluid{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.fila
+{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.columna
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: -1.1px;
+	margin-right: -1.1px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.columna-100
+{
+	width: 100%;
+}
+
+.columna-75
+{
+	width: 75%;
+}
+
+.columna-66
+{
+	width: 66.66%;
+}
+
+.columna-50
+{
+	width: 50%;
+}
+
+.columna-33
+{
+	width: 33.33%;
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+header
+{
+   padding-top: 15px;
+   padding-bottom: 15px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 3;
+}
+
+header .container
+{
+
+}
+
+header .container .con-logo
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .container .con-logo img
+{
+	display: block;
+	width: 33.33%;
+}
+
+header .container .menu
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25%;
+}
+
+header .container .menu a
+{
+	text-decoration: none;
+	margin: 0 7.5px;
+	color: #b41782;
+}
+
+.secciones
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.secciones h2
+{
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.contenedor-imagen
+{
+	padding-bottom: 100%;
+	position: relative;
+	margin: 15px 0;
+}
+
+.contenedor-imagen.rect
+{
+	padding-bottom: 56.25%;
+}
+
+.contenedor-imagen img
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+
+.contenedor-mapa
+{
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.contenedor-mapa iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor-mundo
+{
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.contenedor-mundo img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+
+.boton
+{
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 16px;
+	display: inline-block;
+	border: none;
+}
+
+.boton-rojo
+{
+	background-color: #4a1e00
+	color: #fff;
+}
+
+#inicio
+{
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-color: #ffb718;
+}
+
+#inicio video
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0.8;
+}
+
+#inicio .logo-grande
+{
+	width: 50%;
+	position: absolute;
+	margin-left: -25%;
+	top: 30%;
+	left: 50%;
+}
+
+#locales .desc-mapa
+{
+	padding: 15px;
+	text-align: center;
+}
+
+#locales .desc-mapa h3
+{
+	margin: 0;
+	font-size: 25px;
+}
+
+#locales .desc-mapa p
+{
+	font-size: 18px;
+}
+
+.padding-cero
+{
+	padding: 0;
+}
+
+.padding-grande
+{
+	padding: 60px;
+}
+
+#mundo .cuerpo-texto h2
+{
+    font-size: 35px;
+}
+
+#contactenos .form-bloque
+{
+	margin-bottom: 15px;
+}
+
+#contactenos .form-bloque .form-input
+{
+	display: block;
+	width: 100%;
+	padding: 5px 15px;
+	height: 40px;
+	border: 1px solid #ffb718;
+	background-color: white;
+}
+
+#contactenos .form-bloque textarea
+{
+
+}
+
+#contactenos ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contactenos ul li
+{
+	padding-left: 40px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#contactenos ul li i
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 20px;
+}
+
+#contactenos ul li h3
+{
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+#contactenos ul li a
+{
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+#testimonios
+{
+
+}
+
+#testimonios .foto
+{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+#testimonios .empujar-25 .texto-testimonio
+{
+	text-align: right;
+}
+
+#testimonios .texto-testimonios
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 30px;
+	width: calc(100%-210px)
+}
+
+#testimonios .contenedor-testimonio
+{
+	margin: 30px 0;
+}
+
+#testimonios .foto img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#gracias
+{
+	position: relative;
+}
+
+#gracias .con-texto
+{
+	text-align: center;
+}
+
+#gracias .con-texto h2
+{
+	margin-top: 0;
+	font-size: 29px;
+	margin-bottom: 30px;
+}
+
+.prefooter
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.prefooter .contenedor-redes a
+{
+	width: 50%;
+	display: inline-block;
+	padding-bottom: 25%;
+	position: relative;
+	color: white;
+	text-decoration: none;
+	margin: -2px;
+}
+
+.prefooter .contenedor-redes a i
+{
+	position: absolute;
+	left: 30%;
+	top: 30%;
+}
+
+.prefooter .contenedor-redes a.fb
+{
+	background-color: #426
+}
+
+.footer
+{
+	text-align: center;
+	padding: 15px;
+	background-color: #ffb718;
+	color: #4a1e00;
+}
+
+.prefooter ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.prefooter .logo-footer
+{
+	width: 150px;
+}
+
+.prefooter ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.contenedor-redes
+{
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		
+		*{
+			box-sizing: border-box;
+		}
+
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		section
+		{
+			height: 100vh;
+			display: flex;
+			/*justify-content: center;
+			justify-content: flex-start;
+			justify-content: flex-end;
+			justify-content: space-around;
+			justify-content: space-between;*/
+			justify-content: space-evenly;
+			/*align-items: flex-start;
+			align-items: flex-end;
+			
+			align-items: stretch;
+			el strechh solo funciona cuand los hijos no tinen un alto fijo
+			*/
+			align-items: center;
+			flex-wrap: wrap;
+
+			/*align-content: flex-start;
+				align-content: flex-end;
+				align-content: center;
+				align-content: space-around;
+				align-content: space-between;
+				align-content: space-evenly;
+				align-content: center;
+			*/	
+
+			/*flex-direction: column;
+			flex-direction: row;
+			flex-direction: row-reverse;	
+			flex-direction: column-reverse;	*/	
+
+		}
+
+		.cuadrado
+		{
+			width: 100px;
+			/*flex-basis: 100px;*/
+			height: 100px;
+			background-color: red;
+			color: white;
+			font-size: 20px;
+			border: 1px solid black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/*order: 3;*/
+		}
+
+		.cuadrado1
+		{
+			/*align-self: flex-start;*/
+
+		}
+
+		.cuadrado2
+		{
+			/*align-self: flex-start;*/
+			/*order: 2;*/
+			flex-grow: 1;
+
+		}
+
+		.cuadrado3
+		{
+			/*align-self: flex-end;*/
+			/*order: 1;*/
+			
+			flex-grow: 1;
+		}
+
+	</style>
+</head>
+<body>
+<section>
+	<div class="cuadrado cuadrado1">1</div>
+	<div class="cuadrado cuadrado2">2</div>
+	<!--<div class="cuadrado cuadrado3">3</div>-->
+</section>
+</body>
+</html>

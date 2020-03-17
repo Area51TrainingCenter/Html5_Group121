@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		#trama{
+			background-color: black;
+			opacity: 0;
+			transition: all .4s ease;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		#trama.cambio
+		{
+			opacity: 0.5;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<img src="img/foto1.jpg" id="imagen">
+	<div id="trama"></div>
+	<script src="js/attr.js"></script>
+</body>
+</html>

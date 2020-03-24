@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<style>
+		*
+		{
+			box-sizing: border-box;
+		}
+
+		body{
+			padding: 0;
+			margin: 0;
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		.titulo-acordion
+		{
+			margin-top: 0;
+			background-color: black;
+			color: white;
+			padding: 10px 15px;
+			position: relative;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+
+		.titulo-acordion i
+		{
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+		}
+
+		.cuerpo-acordion
+		{
+			padding: 30px 15px;
+			border: 1px solid black;
+			margin-bottom: 5px;
+			display: none;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<h2 class="titulo-acordion">Titulo 1 <i class="fas fa-chevron-down"></i></h2>
+	<div class="cuerpo-acordion">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </p><p>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<h2 class="titulo-acordion">Titulo 2 <i class="fas fa-chevron-down"></i></h2>
+	<div class="cuerpo-acordion">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </p><p>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<h2 class="titulo-acordion">Titulo 3 <i class="fas fa-chevron-down"></i></h2>
+	<div class="cuerpo-acordion">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </p><p>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<script src="js/acordion.js"></script>
+</body>
+</html>

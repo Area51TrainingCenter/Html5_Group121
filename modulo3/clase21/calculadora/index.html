@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<div class="contenedor-calculadora">
+	<div>
+		<input type="text" name="numero" placeholder="0" id="texto">
+	</div>
+	<div>
+		<div class="bloque-numeros">
+			<div class="boton" onclick="concatenar(9)">9</div>
+			<div class="boton" onclick="concatenar(8)">8</div>
+			<div class="boton" onclick="concatenar(7)">7</div>
+			<div class="boton" onclick="concatenar(6)">6</div>
+			<div class="boton" onclick="concatenar(5)">5</div>
+			<div class="boton" onclick="concatenar(4)">4</div>
+			<div class="boton" onclick="concatenar(3)">3</div>
+			<div class="boton" onclick="concatenar(2)">2</div>
+			<div class="boton" onclick="concatenar(1)">1</div>
+			<div class="boton" onclick="limpiar()">CE</div>
+			<div class="boton" onclick="concatenar(0)">0</div>
+			<div class="boton" onclick="igual()">=</div>
+		</div>
+		<div class="bloque-operadores">
+			<div class="boton" onclick="operando('sumar')">+</div>
+			<div class="boton" onclick="operando('restar')">-</div>
+			<div class="boton" onclick="operando('multiplicar')">*</div>
+			<div class="boton" onclick="operando('dividir')">/</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/funciones.js"></script>
+</body>
+</html>

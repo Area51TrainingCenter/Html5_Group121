@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.js"></script>
 </head>
-<body>
+<body class="sinscroll">
 	<header>
 		<div class="container">
 			<a href="#" class="con-logo"><img src="img/logo.svg"></a>
@@ -30,14 +30,15 @@
 	</header>
 	<main>
 		<section id="inicio">
-			<video width="800" height="600" autoplay muted loop >
+			<video id="videochica" width="800" height="600" autoplay muted loop >
 				<source src="video/video.mp4" type="video/mp4">
 				<source src="video/video.ogv" type="video/ogg">
 				<source src="video/video.webm" type="video/webm">
 			</video>
 			<img src="img/logo.svg" class="logo-grande">
 			<!--<h1>HOLA MUNDO</h1>-->
-			<a href="#" class="flecha-abajo"><i class="fas fa-chevron-down"></i></a>
+			<!--<a href="#" class="flecha-abajo"><i class="fas fa-chevron-down"></i></a>-->
+			<a href="#" class="playpause"><i class="fas fa-pause-circle"></i></a>
 		</section> 
 
 		<section id="gracias" class="secciones">
@@ -98,6 +99,8 @@
 					</div>
 				</div>
 			</div>
+
+			<a href="#" class="flecha-abajo"><i class="fas fa-chevron-down"></i></a>
 		</section>
 
 		<section id="lacarta" class="secciones">
@@ -279,25 +282,28 @@
 			<div class="container-fluid">
 				<div class="fila">
 					<div class="columna columna-50 columna-m-100  padding-grande">
-						<form action="registrar.php" id="frmcontacto">
+						<form action="registrar.php" id="frmcontacto" method="post" onsubmit="return false;">
 							<div class="form-bloque">
-								<input placeholder="Nombre*" type="text" required name="Nombre" class="form-input">
+								<input placeholder="Nombre*" type="text" required name="Nombre" id="nombre" class="form-input">
 							</div>
 							<div class="form-bloque">
-								<input  placeholder="Email*"  type="email" required name="Email" class="form-input">
+								<input  placeholder="Email*" id="email"  type="email" required name="Email" class="form-input">
 							</div>
 							<div class="form-bloque">
-								<select name="local" required class="form-input">
+								<select name="local" id="local"  required class="form-input">
 									<option value="">-- Seleccione un local --</option>
 									<option value="1">San Miguel</option>
 									<option value="2">lMiraflores</option>
 								</select>
 							</div>
 							<div class="form-bloque">
-								<textarea name="mensaje" placeholder="Mensaje"></textarea>
+								<textarea name="mensaje" id="mensaje"  placeholder="Mensaje"></textarea>
 							</div>
 							<div class="form-bloque">
-								<input type="submit" class="boton boton-rojo" value="Enviar">
+								<input type="submit" class="boton boton-rojo btnenviar" value="Enviar">
+							</div>
+							<div class="form-bloque">
+								<p id="respuesta"></p>
 							</div>
 						</form>
 					</div>
@@ -350,7 +356,31 @@
 				</div>
 			</div>
 		</section>
+		<section id="buscar" class="secciones">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-100 centrar-texto">
+						<h2>Buscar platos</h2>
+					</div>
+				</div>
+				<div class="fila">
+					<div class="columna columna-100">
+						<form id="frmbsucadorplatos" onsubmit="return false">
+							<div class="form-bloque">
+								<input placeholder="Ingrese un plato*" type="text" required name="plato" id="plato" class="form-input">
+							</div>
+							<div class="form-bloque">
+								<input type="submit" class="boton boton-rojo btnbuscar" value="Buscar">
+							</div>
+						</form>
+					</div>
+					<div class="columna columna-100" id="respuestaplatos">
 
+						
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="prefooter">
@@ -396,6 +426,12 @@
 		<a href="#" class="btn-red btn-tw"><i class="fab fa-twitter"></i></a>
 	</div>
 	<a href="#" class="subida"><i class="fas fa-arrow-up"></i></a>
+	<div class="trama">
+		<div class="precarga"></div>
+	</div>
+	<div class="trama2">
+		<div class="bloquemensaje"></div>
+	</div>
 	<script src="js/funciones.js"></script>
 </body>
 </html>

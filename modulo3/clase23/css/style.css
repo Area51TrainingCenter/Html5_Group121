@@ -57,6 +57,16 @@ body {
 	background-color: #f3ede1;
 }
 
+body.sinscroll
+{
+	overflow: hidden;
+}
+
+section
+{
+	position: relative;
+}
+
 footer {
 	background-color: #eb0028;
 	color: #fff;
@@ -582,11 +592,11 @@ header .container .menu a:hover {
 	columns: 4;
 }
 
-#contactenos .form-bloque {
+form .form-bloque {
 	margin-bottom: 1rem;
 }
 
-#contactenos .form-bloque .form-input {
+form .form-bloque .form-input {
 	display: block;
 	width: 100%;
 	padding: 0.3px 1rem;
@@ -595,7 +605,7 @@ header .container .menu a:hover {
 	/*background-color: transparent;*/
 }
 
-#contactenos .form-bloque textarea {
+form .form-bloque textarea {
 	width: 100%;
 	height: 10rem;
 	border: 1px solid #ffb718;
@@ -968,6 +978,17 @@ header .container .menu a:hover {
 	transform: scale(1.5);
 }
 
+.playpause
+{
+	position: absolute;
+	left: 50%;
+	bottom: 2rem;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
 .flecha-abajo
 {
 	width: 3rem;
@@ -1000,6 +1021,104 @@ header .container .menu a:hover {
 	animation-play-state: paused;
 		width: 4rem;
 		height: 4rem;
+}
+
+.trama, .trama2
+{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.trama2
+{
+	display: none;
+}
+
+.trama2 .bloquemensaje
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #ffb718;
+	padding: 4rem 2rem;
+	color: #fff;
+	border-radius: 1rem;
+	width: 25%;
+	display: none;
+	text-align: center;
+}
+
+.trama .precarga
+{
+	width: 8rem;
+	height: 8rem;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(0deg);
+	border-radius: 4rem;
+	border: 0.25rem solid transparent;
+	border-top-color: red;
+	animation-duration: 1.5s;
+	animation-name: girar1;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+.trama .precarga::before
+{
+	content: "";
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(0deg);
+	border-radius: 4rem;
+	border-top: 0.25rem solid transparent;
+	border-top-color: #ffb718;
+	animation-duration: 0.8s;
+	animation-name: girar2;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+@keyframes girar1
+{
+	0%{
+	 transform: translate(-50%,-50%) rotate(0deg);
+	}
+
+	50%{
+	 transform: translate(-50%,-50%) rotate(180deg);
+	}	
+
+	100%{
+	 transform: translate(-50%,-50%) rotate(360deg);
+	}
+}
+
+@keyframes girar2
+{
+	0%{
+	 transform: translate(-50%,-50%) rotate(0deg);
+	}
+
+	50%{
+	 transform: translate(-50%,-50%) rotate(180deg);
+	}	
+
+	100%{
+	 transform: translate(-50%,-50%) rotate(360deg);
+	}
 }
 
 @keyframes saltar
@@ -1037,6 +1156,11 @@ css de tabllet horizontal o landscape
 css de desktop
 }
 */
+
+#respuesta
+{
+	
+}
 
 @media (min-width: 1200px) {
 	/*css desktop*/
